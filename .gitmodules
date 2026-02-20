@@ -1,0 +1,3 @@
+[submodule "MorphyNet"]
+	path = MorphyNet
+	url = https://github.com/kbatsuren/MorphyNet.git
