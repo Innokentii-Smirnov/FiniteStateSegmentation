@@ -4,10 +4,12 @@ import argparse
 import pandas as pd
 from lexicon import Lexicon
 from typing import Any
+import json
 DATA_REPOSITORY = 'MorphyNet'
 DATA_FILE_NAME_TEMPLATE = '{0}.derivational.v1.tsv'
 SEP = '\t'
 COLUMN_NAMES = ['base', 'derivative', 'base_pos', 'deriv_pos', 'affix', 'affix_type']
+ENDING_FILE_NAME = 'Endings.json'
 LEXICON_DIRECTORY_TEMPLATE = '{0}/src'
 LEXICON_FILE_NAME = 'Affixes.lexc'
 UNKNOWN_POS_SYMBOL = 'U'
@@ -36,7 +38,10 @@ df = pd.read_csv(data_frame_file, sep=SEP, names=COLUMN_NAMES)
 print(df.head())
 parts_of_speech = set(df['base_pos']) | set(df['deriv_pos'])
 parts_of_speech.remove(UNKNOWN_POS_SYMBOL)
-lexicon = Lexicon(parts_of_speech)
+ending_file_path = path.join(language_code, ENDING_FILE_NAME)
+with open(ending_file_path, 'r', encoding='utf-8') as fin:
+  endings: dict[str, list[str]] = json.load(fin)
+lexicon = Lexicon(parts_of_speech, endings)
 row: Any = None
 derivations = set[tuple[str, str]]()
 for row in df.itertuples(name='DerivationalPair'):
@@ -46,7 +51,8 @@ for row in df.itertuples(name='DerivationalPair'):
   bases.add((row.base, row.base_pos))
 underived = bases - derivations
 for base, base_pos in underived:
-  lexicon.add_root(base, base_pos)
+  if base_pos != UNKNOWN_POS_SYMBOL:
+    lexicon.add_root(base, base_pos)
 for row in df.itertuples(name='DerivationalPair'):
   if row.base_pos != UNKNOWN_POS_SYMBOL and row.deriv_pos != UNKNOWN_POS_SYMBOL:
     lexicon.add(row)

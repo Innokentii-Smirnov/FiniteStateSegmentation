@@ -23,8 +23,9 @@ def add_boundary(affix_form: str, affix_type: str) -> str:
 class Lexicon:
   lexicons: defaultdict[str, set[Entry | ClassEntry]]
   parts_of_speech: list[str]
+  endings: dict[str, list[str]]
 
-  def __init__(self, parts_of_speech: Iterable[str]):
+  def __init__(self, parts_of_speech: Iterable[str], endings: dict[str, list[str]]):
     self.lexicons = defaultdict(set)
     self.parts_of_speech = sorted(parts_of_speech)
     root_lexicon = self.lexicons[ROOT_LEXICON_NAME]
@@ -32,6 +33,14 @@ class Lexicon:
     for part_of_speech in parts_of_speech:
       root_lexicon.add(ClassEntry(part_of_speech + 'Root'))
       self.lexicons[part_of_speech].add(END_OF_WORD_ENTRY)
+    self.endings = endings
+
+  def detach_ending(self, form: str, part_of_speech: str) -> tuple[str, str]:
+    endings = self.endings[part_of_speech]
+    for ending in endings:
+      if len(ending) < len(form) and form.endswith(ending):
+        return form[:-len(ending)], ending
+    return form, ''
 
   @property
   def lexicon_order(self) -> list[str]:
@@ -57,7 +66,8 @@ class Lexicon:
     entry = Entry(form, next_class)
     self.lexicons[lexicon_name].add(entry)
 
-  def add_root(self, root: str, part_of_speech: str) -> None:
+  def add_root(self, citation_form: str, part_of_speech: str) -> None:
+    root, ending = self.detach_ending(citation_form, part_of_speech)
     if ' ' not in root:
       self.lexicons[part_of_speech + 'Root'].add(Entry( '({0})'.format(root), part_of_speech))
 
