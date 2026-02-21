@@ -1116,9 +1116,9 @@ bilateral ← bi-(lateral)
 peruviano ← per-(uv)-i-an-o
 peruviano ← per-(uv)-ian-o
 
-antiviral ← +?
+antiviral ← anti-(vir)-al
 
-antivirus ← anti-(virus)
+antivirus ← anti-(vir)-us
 
 elemental ← (element)-al
 
@@ -11193,6 +11193,8 @@ cervecero ← (cervecer)-o
 
 viremia ← (vir)-e-m-i-a
 viremia ← (vir)-e-m-ia
+viremia ← (vir)-emi-a
+viremia ← (vir)-emia
 
 gentileza ← (gent)-il-e-z-a
 gentileza ← (gent)-il-ez-a
@@ -52478,6 +52480,8 @@ conductualmente ← con-(duct)-u-al-mente
 
 autodefenderse ← auto-(defend)-er-s-e
 
+virulentamente ← (vir)-u-le-nt-a-ment-e
+virulentamente ← (vir)-u-le-nt-a-mente
 virulentamente ← (virulent)-a-ment-e
 virulentamente ← (virulent)-a-mente
 
@@ -112880,6 +112884,7 @@ pamplinoso ← (pamplin)-os-o
 pamplinero ← (pamplin)-er-o
 
 viroma ← (vir)-om-a
+viroma ← (vir)-oma
 
 alamborado ← (alambor)-a-d-o
 alamborado ← (alambor)-ad-o
@@ -115778,6 +115783,8 @@ abrigadero ← a-(brigad)-er-o
 
 viremia ← (vir)-e-m-i-a
 viremia ← (vir)-e-m-ia
+viremia ← (vir)-emi-a
+viremia ← (vir)-emia
 
 criador ← (cri)-a-d-or
 criador ← (cri)-a-dor

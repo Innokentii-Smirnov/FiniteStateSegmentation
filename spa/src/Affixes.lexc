@@ -3178,7 +3178,7 @@ LEXICON NRoot
 (Colombi)	Na;
 (Coloni)	Na;
 (Colorad)	No;
-(Columbus)	Nzero;
+(Columb)	Nus;
 (Colón)	Nzero;
 (Comoras)	Nzero;
 (Compostel)	Na;
@@ -3836,8 +3836,8 @@ LEXICON NRoot
 (Veg)	Na;
 (Vegas)	Nzero;
 (Velasc)	No;
+(Ven)	Nus;
 (Venezuel)	Na;
-(Venus)	Nzero;
 (Veracruz)	Nzero;
 (Veraguas)	Nzero;
 (Vermont)	Nzero;
@@ -4043,7 +4043,7 @@ LEXICON NRoot
 (ajustad)	Na;
 (ají)	Nzero;
 (al)	Na;
-(al-Ándalus)	Nzero;
+(al-Ándal)	Nus;
 (alabanci)	Na;
 (alabard)	Na;
 (alabastr)	No;
@@ -4647,10 +4647,10 @@ LEXICON NRoot
 (bombard)	Na;
 (bombón)	Nzero;
 (bon)	No;
+(bon)	Nus;
 (bonch)	Ne;
 (bondad)	Nzero;
 (bonet)	Ne;
-(bonus)	Nzero;
 (bor)	No;
 (bord)	Ne;
 (bord)	No;
@@ -4768,7 +4768,7 @@ LEXICON NRoot
 (caciqu)	Ne;
 (cacofoní)	Na;
 (cact)	No;
-(cactus)	Nzero;
+(cact)	Nus;
 (caden)	Na;
 (cadenci)	Na;
 (cader)	Na;
@@ -5576,7 +5576,7 @@ LEXICON NRoot
 (cuy)	Nzero;
 (cuñ)	No;
 (cuñad)	No;
-(cyanus)	Nzero;
+(cyan)	Nus;
 (cábal)	Na;
 (cábul)	Na;
 (cálam)	No;
@@ -7089,7 +7089,7 @@ LEXICON NRoot
 (luminiscenci)	Na;
 (lun)	Na;
 (lunfard)	No;
-(lupus)	Nzero;
+(lup)	Nus;
 (lustr)	No;
 (lux)	Nzero;
 (luxación)	Nzero;
@@ -8880,7 +8880,7 @@ LEXICON NRoot
 (tiend)	Na;
 (tierr)	Na;
 (tif)	No;
-(tifus)	Nzero;
+(tif)	Nus;
 (tifón)	Nzero;
 (tigr)	Ne;
 (tijer)	Na;
@@ -9196,10 +9196,10 @@ LEXICON NRoot
 (violenci)	Na;
 (violoncel)	No;
 (violín)	Nzero;
+(vir)	Nus;
 (virgen)	Nzero;
 (virrein)	No;
 (virrey)	Nzero;
-(virus)	Nzero;
 (vis)	No;
 (visaj)	Ne;
 (visit)	Na;
@@ -13068,6 +13068,10 @@ N;
 
 LEXICON No
 -o	#;
+N;
+
+LEXICON Nus
+-us	#;
 N;
 
 LEXICON Nzero
