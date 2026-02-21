@@ -1,9 +1,9 @@
 from typing import Iterable
 from collections import defaultdict
+import logging
 from entry import Entry, ClassEntry
 from derivational_pair import DerivationalPair
 from morpheme import Morpheme
-import logging
 
 ROOT_LEXICON_NAME = 'Root'
 PREFIX_LEXICON_NAME = 'Prefixes'

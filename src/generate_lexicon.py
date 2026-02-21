@@ -1,10 +1,10 @@
 import os
 from os import path
 import argparse
-import pandas as pd
-from lexicon import Lexicon
 from typing import Any
 import json
+import pandas as pd
+from lexicon import Lexicon
 DATA_REPOSITORY = 'MorphyNet'
 DATA_FILE_NAME_TEMPLATE = '{0}.derivational.v1.tsv'
 SEP = '\t'
