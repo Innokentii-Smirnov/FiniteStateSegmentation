@@ -10,6 +10,16 @@ END_OF_WORD_NEXT_CLASS = '#'
 END_OF_WORD_ENTRY = ClassEntry(END_OF_WORD_NEXT_CLASS)
 ROOT_FORM_TEMPLATE = '<?+>'
 LEXICON_HEADER_TEMPLATE = 'LEXICON {0}'
+MORPHEME_BOUNDARY = '-'
+
+def add_boundary(affix_form: str, affix_type: str) -> str:
+  match affix_type:
+    case 'prefix':
+      return affix_form + MORPHEME_BOUNDARY
+    case 'suffix':
+      return MORPHEME_BOUNDARY + affix_form
+    case _:
+      raise ValueError('Unsupported affix type: {0}.'.format(affix_type))
 
 class Lexicon:
   lexicons: defaultdict[str, set[Entry | ClassEntry]]
@@ -30,7 +40,7 @@ class Lexicon:
     return [ROOT_LEXICON_NAME, PREFIX_LEXICON_NAME] + sorted(self.parts_of_speech)
 
   def add(self, row: DerivationalPair) -> None:
-    form: str = row.affix
+    form: str = add_boundary(row.affix, row.affix_type)
     match row.affix_type:
       case 'prefix':
         if row.base_pos == row.deriv_pos:
