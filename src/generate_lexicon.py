@@ -53,9 +53,29 @@ underived = bases - derivations
 for base, base_pos in underived:
   if base_pos != UNKNOWN_POS_SYMBOL:
     lexicon.add_citation_form(base, base_pos)
-for row in df.itertuples(name='DerivationalPair'):
-  if row.base_pos != UNKNOWN_POS_SYMBOL and row.deriv_pos != UNKNOWN_POS_SYMBOL:
-    lexicon.add(row)
+
+known_pos = df[(df.base_pos != UNKNOWN_POS_SYMBOL) & (df.deriv_pos != UNKNOWN_POS_SYMBOL)]
+
+suffixes = known_pos.loc[df.affix_type == 'suffix', ['affix', 'base_pos', 'deriv_pos']].drop_duplicates()
+print(suffixes.shape)
+print(suffixes.head())
+suffixes.to_csv(path.join(language_code, 'Suffixes.tsv'), sep=SEP, header=True, index=False)
+for form, base_pos, deriv_pos in suffixes.itertuples(index=False, name=None):
+  lexicon.add_suffix_with_attached_ending(form, base_pos, deriv_pos)
+
+prefixes = known_pos.loc[df.affix_type == 'prefix', ['affix', 'base_pos', 'deriv_pos']].drop_duplicates()
+print(prefixes.shape)
+print(prefixes.head())
+prefixes.to_csv(path.join(language_code, 'Prefixes.tsv'), sep=SEP, header=True, index=False)
+
+category_preserving_prefixes = prefixes.loc[prefixes.deriv_pos == prefixes.base_pos, ['affix', 'base_pos']].drop_duplicates()
+print(category_preserving_prefixes.shape)
+print(category_preserving_prefixes.head())
+category_preserving_prefixes.to_csv(path.join(language_code, 'CategoryPreservingPrefixes.tsv'),
+                                    sep=SEP, header=True, index=False)
+for form, base_pos in category_preserving_prefixes.itertuples(index=False, name=None):
+  lexicon.add_category_preserving_prefix(form, base_pos)
+
 lexicon_directory = LEXICON_DIRECTORY_TEMPLATE.format(language_code)
 os.makedirs(lexicon_directory, exist_ok=True)
 lexicon_full_path = path.join(lexicon_directory, LEXICON_FILE_NAME)

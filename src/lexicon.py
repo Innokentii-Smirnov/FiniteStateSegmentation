@@ -2,7 +2,6 @@ from typing import Iterable
 from collections import defaultdict
 import logging
 from entry import Entry, ClassEntry
-from derivational_pair import DerivationalPair
 from morpheme import Morpheme
 
 ROOT_LEXICON_NAME = 'Root'
@@ -67,19 +66,17 @@ class Lexicon:
     entry = Entry(morpheme.form_with_boundary, morpheme.next_positional_class)
     self.lexicons[morpheme.positional_class].add(entry)
 
-  def add(self, row: DerivationalPair) -> None:
-    match row.affix_type:
-      case 'prefix':
-        if row.base_pos == row.deriv_pos:
-          next_class: str = row.base_pos + 'Root'
-          morpheme = Morpheme(row.affix, PREFIX_LEXICON_NAME, next_class, 'prefix')
-          self.add_morph(morpheme)
-      case 'suffix':
-        suffix = self.detach_ending_from_suffix(row.affix, row.base_pos, row.deriv_pos)
-        if suffix is not None:
-          self.add_suffix(suffix)
-        else:
-          logging.warning('No ending could be detached from %s %s %s', row.affix, row.base_pos, row.deriv_pos)
+  def add_category_preserving_prefix(self, form: str, base_pos: str) -> None:
+    next_positional_class = get_root_positional_class(base_pos)
+    prefix = Morpheme(form, PREFIX_LEXICON_NAME, next_positional_class, 'prefix')
+    self.add_morph(prefix)
+
+  def add_suffix_with_attached_ending(self, form: str, base_pos: str, deriv_pos: str) -> None:
+    suffix = self.detach_ending_from_suffix(form, base_pos, deriv_pos)
+    if suffix is not None:
+      self.add_suffix(suffix)
+    else:
+      logging.warning('No ending could be detached from %s %s %s', form, base_pos, deriv_pos)
 
   def add_citation_form(self, citation_form: str, part_of_speech: str) -> None:
     if ' ' not in citation_form:
