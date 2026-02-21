@@ -70,12 +70,13 @@ class Lexicon:
   def add_root(self, citation_form: str, part_of_speech: str) -> None:
     root, ending = self.detach_ending(citation_form, part_of_speech)
     if ' ' not in root:
-      inflectional_class_lexicon_name = part_of_speech + ending
-      self.lexicons[part_of_speech + 'Root'].add(Entry( '({0})'.format(root), inflectional_class_lexicon_name))
       if ending == '':
+        inflectional_class_lexicon_name = part_of_speech + 'zero'
         ending_entry: Entry | ClassEntry = END_OF_WORD_ENTRY
       else:
+        inflectional_class_lexicon_name = part_of_speech + ending
         ending_entry = Entry('-' + ending, END_OF_WORD_NEXT_CLASS)
+      self.lexicons[part_of_speech + 'Root'].add(Entry( '({0})'.format(root), inflectional_class_lexicon_name))
       self.lexicons[inflectional_class_lexicon_name].add(ending_entry)
       self.lexicons[inflectional_class_lexicon_name].add(ClassEntry(part_of_speech))
 
