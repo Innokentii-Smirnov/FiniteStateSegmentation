@@ -79,7 +79,7 @@ class Lexicon:
         if suffix is not None:
           self.add_suffix(suffix)
         else:
-          logging.warn('No ending could be detached from %s %s %s', row.affix, row.base_pos, row.deriv_pos)
+          logging.warning('No ending could be detached from %s %s %s', row.affix, row.base_pos, row.deriv_pos)
 
   def add_citation_form(self, citation_form: str, part_of_speech: str) -> None:
     if ' ' not in citation_form:
@@ -87,7 +87,7 @@ class Lexicon:
       if root is not None:
         self.add_morph(root)
       else:
-        logging.warn('No ending could be detached from %s %s', citation_form, part_of_speech)
+        logging.warning('No ending could be detached from %s %s', citation_form, part_of_speech)
 
   def add_suffix(self, suffix: Morpheme) -> None:
     if suffix.form != '':
