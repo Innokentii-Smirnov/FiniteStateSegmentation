@@ -12153,7 +12153,6 @@ zoo-	NRoot;
 
 LEXICON J
 -a	Jzero;
--a	Nzero;
 -abl	Je;
 -aca	Jzero;
 -ach	Jo;
@@ -12327,7 +12326,6 @@ LEXICON J
 -nci	Na;
 -nt	Je;
 -nt	Na;
--o	Nzero;
 -oc	Jo;
 -oid	Je;
 -oid	Ne;
@@ -12390,7 +12388,6 @@ LEXICON J
 
 LEXICON N
 -1	Jzero;
--a	Nzero;
 -abl	Je;
 -abl	Ne;
 -ac	Jo;
@@ -12508,7 +12505,6 @@ LEXICON N
 -dura	Jzero;
 -e	Jo;
 -e	No;
--e	Nzero;
 -e	Var;
 -ead	Na;
 -ear	Jzero;
@@ -12701,8 +12697,6 @@ LEXICON N
 -nomí	Na;
 -nt	Je;
 -nt	Ne;
--o	Jzero;
--o	Nzero;
 -oc	Na;
 -oc	No;
 -och	Na;
@@ -12866,7 +12860,6 @@ LEXICON R
 -ón	Nzero;
 
 LEXICON V
--a	Nzero;
 -abilidad	Nzero;
 -abl	Je;
 -abl	Ne;
@@ -12931,9 +12924,7 @@ LEXICON V
 -dur	Na;
 -dura	Jzero;
 -durí	Na;
--e	Jzero;
 -e	No;
--e	Nzero;
 -e	Var;
 -ec	Ver;
 -edad	Nzero;
@@ -13010,8 +13001,6 @@ LEXICON V
 -nt	Je;
 -nt	Na;
 -nt	Ne;
--o	Jzero;
--o	Nzero;
 -om	Na;
 -on	Na;
 -ong	Na;

@@ -49,7 +49,7 @@ class Lexicon:
   def detach_ending(self, form: str, part_of_speech: str, is_root: bool) -> tuple[str, str] | None:
     endings = self.endings[part_of_speech]
     for ending in endings:
-      if len(ending) < len(form) and form.endswith(ending):
+      if form.endswith(ending):
         if not is_root or len(form) - len(ending) > 1:
           return form[:len(form)-len(ending)], ending
     return None
@@ -77,7 +77,7 @@ class Lexicon:
       case 'suffix':
         suffix = self.detach_ending_from_suffix(row.affix, row.base_pos, row.deriv_pos)
         if suffix is not None:
-          self.add_morph(suffix)
+          self.add_suffix(suffix)
         else:
           logging.warn('No ending could be detached from %s %s %s', row.affix, row.base_pos, row.deriv_pos)
 
@@ -88,6 +88,10 @@ class Lexicon:
         self.add_morph(root)
       else:
         logging.warn('No ending could be detached from %s %s', citation_form, part_of_speech)
+
+  def add_suffix(self, suffix: Morpheme) -> None:
+    if suffix.form != '':
+      self.add_morph(suffix)
 
   def add_ending(self, ending: Morpheme) -> None:
     if ending.form != '':
