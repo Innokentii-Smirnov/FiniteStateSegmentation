@@ -2,6 +2,7 @@ from typing import Iterable
 from collections import defaultdict
 from entry import Entry, ClassEntry
 from derivational_pair import DerivationalPair
+from morpheme import Morpheme
 
 ROOT_LEXICON_NAME = 'Root'
 PREFIX_LEXICON_NAME = 'Prefixes'
@@ -51,16 +52,19 @@ class Lexicon:
     other = sorted(set(self.lexicons) - set(order))
     return order + other
 
+  def add_morph(self, morpheme: Morpheme) -> None:
+    entry = Entry(morpheme.form_with_boundary, morpheme.next_positional_class)
+    self.lexicons[morpheme.positional_class].add(entry)
+
   def add(self, row: DerivationalPair) -> None:
-    form: str = add_boundary(row.affix, row.affix_type)
     match row.affix_type:
       case 'prefix':
         if row.base_pos == row.deriv_pos:
-          lexicon_name = PREFIX_LEXICON_NAME
           next_class: str = row.base_pos + 'Root'
-          entry = Entry(form, next_class)
-          self.lexicons[lexicon_name].add(entry)
+          morpheme = Morpheme(row.affix, PREFIX_LEXICON_NAME, next_class, 'prefix')
+          self.add_morph(morpheme)
       case 'suffix':
+        form: str = add_boundary(row.affix, row.affix_type)
         self.add_morpheme(form, row.base_pos, False, row.deriv_pos)
 
   def add_morpheme(self, citation_form: str, part_of_speech: str, is_root: bool,
