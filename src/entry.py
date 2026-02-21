@@ -15,7 +15,7 @@ class Entry:
     if isinstance(other, ClassEntry):
       return True
     else:
-      return self.form < other.form and self.next_class < other.next_class
+      return (self.form, self.next_class) < (other.form, other.next_class)
 
 @dataclass(frozen=True)
 class ClassEntry:
