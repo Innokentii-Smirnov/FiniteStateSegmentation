@@ -421,7 +421,7 @@ vacuno ← (vac)-uno
 vacante ← (vac)-a-nte
 vacante ← (vac)-ante
 
-reabrir ← +?
+reabrir ← re-(abr)-ir
 
 realzar ← (re)-al-zar
 realzar ← (real)-zar
@@ -432,7 +432,7 @@ civilización ← (civil)-ización
 
 reproducible ← re-(produc)-ible
 
-descubrir ← +?
+descubrir ← des-(cubr)-ir
 
 caballar ← (caball)-ar
 
@@ -1043,6 +1043,7 @@ analizar ← ana-(l)-izar
 
 desaparecer ← de-(sap)-ar-ecer
 desaparecer ← des-(apar)-ecer
+desaparecer ← des-(aparec)-er
 
 negociador ← (negoci)-a-dor
 negociador ← (negoci)-ador
@@ -1053,7 +1054,7 @@ desarrollar ← +?
 
 expresar ← (expres)-ar
 
-perseguir ← +?
+perseguir ← per-(segu)-ir
 
 lenguaje ← (lengu)-aje
 
@@ -1069,7 +1070,7 @@ programar ← (program)-ar
 programar ← pro-(-gram)-ar
 programar ← pro-(gram)-ar
 
-sobrevivir ← +?
+sobrevivir ← sobre-(viv)-ir
 
 asesinar ← (asesin)-ar
 
@@ -1374,9 +1375,9 @@ toreador ← (tor)-e-ador
 
 chapucero ← (chapucer)-o
 
-encubrir ← +?
+encubrir ← en-(cubr)-ir
 
-recubrir ← +?
+recubrir ← re-(cubr)-ir
 
 desafortunadamente ← des-(afortunad)-a-mente
 
@@ -2105,7 +2106,7 @@ anestesiar ← an-(este)-s-iar
 
 anexar ← (anex)-ar
 
-apercibir ← +?
+apercibir ← a-(percib)-ir
 
 apostillar ← a-(postill)-ar
 
@@ -2234,7 +2235,7 @@ clarear ← (clar)-ear
 
 clausurar ← (clausur)-ar
 
-coexistir ← +?
+coexistir ← co-(exist)-ir
 
 cojear ← (coj)-ear
 
@@ -2271,7 +2272,7 @@ contagiar ← (contagi)-ar
 contrabandear ← contra-(band)-e-ar
 contrabandear ← contra-(band)-ear
 
-convivir ← +?
+convivir ← con-(viv)-ir
 
 coquetear ← (coquet)-e-ar
 coquetear ← (coquet)-ear
@@ -2754,7 +2755,7 @@ recorrer ← re-(corr)-er
 recortar ← re-(cor)-tar
 recortar ← re-(cort)-ar
 
-redefinir ← +?
+redefinir ← re-(defin)-ir
 
 reembolsar ← +?
 
@@ -3446,11 +3447,11 @@ antimafia ← anti-(mafi)-a
 fieramente ← (fi)-era-mente
 fieramente ← (fier)-a-mente
 
-descomponer ← +?
+descomponer ← des-(compon)-er
 
-desenvolver ← +?
+desenvolver ← des-(envolv)-er
 
-deshacer ← +?
+deshacer ← des-(hac)-er
 
 probablemente ← (prob)-a-ble-mente
 probablemente ← (prob)-able-mente
@@ -3514,7 +3515,7 @@ fenomenal ← +?
 
 vaciar ← (vac)-iar
 
-rehacer ← +?
+rehacer ← re-(hac)-er
 
 alfarero ← (alfar)-er-o
 alfarero ← (alfar)-ero
@@ -3529,9 +3530,10 @@ arterioso ← (arteri)-oso
 venoso ← (ven)-o-s-o
 venoso ← (ven)-oso
 
+entrever ← entre-(v)-er
 entrever ← entre-(ver)
 
-predecir ← +?
+predecir ← pre-(dec)-ir
 
 apostar ← a-(post)-ar
 
@@ -3539,7 +3541,7 @@ anestesista ← an-(este)-s-ista
 
 pagano ← (pag)-ano
 
-reescribir ← +?
+reescribir ← re-(escrib)-ir
 
 afuera ← a-(fuer)-a
 afuera ← a-(fuera)
@@ -3782,7 +3784,7 @@ gustoso ← (gust)-oso
 
 basamento ← +?
 
-escoger ← +?
+escoger ← es-(cog)-er
 
 romanticismo ← +?
 
@@ -4246,6 +4248,7 @@ individualista ← (individu)-al-ista
 individualista ← (individual)-ista
 individualista ← (individualist)-a
 
+recaer ← re-(ca)-er
 recaer ← re-(caer)
 
 endotérmico ← endo-(térmic)-o
@@ -4867,7 +4870,7 @@ regador ← (reg)-ador
 plantera ← (plant)-er-a
 plantera ← (plant)-era
 
-retorcer ← +?
+retorcer ← re-(torc)-er
 
 reinona ← (rein)-ona
 
@@ -5161,7 +5164,7 @@ popularizar ← (popular)-izar
 
 desperdiciar ← (desperdici)-ar
 
-desconocer ← +?
+desconocer ← des-(conoc)-er
 
 contador ← (cont)-a-dor
 contador ← (cont)-ador
@@ -5614,6 +5617,7 @@ papito ← (pap)-ito
 
 omnipresente ← omni-(presente)
 
+desmentir ← des-(ment)-ir
 desmentir ← des-(mentir)
 
 desplegar ← des-(pleg)-ar
@@ -5635,21 +5639,21 @@ desaprobar ← des-(aprob)-ar
 
 descolgar ← des-(colg)-ar
 
-destorcer ← +?
+destorcer ← des-(torc)-er
 
 repoblar ← +?
 
 revolcar ← re-(volc)-ar
 
-desteñir ← +?
+desteñir ← des-(teñ)-ir
 
-desvestir ← +?
+desvestir ← des-(vest)-ir
 
-reelegir ← +?
+reelegir ← re-(eleg)-ir
 
-reexpedir ← +?
+reexpedir ← re-(exped)-ir
 
-subseguir ← +?
+subseguir ← sub-(segu)-ir
 
 montés ← +?
 
@@ -5789,23 +5793,27 @@ comparecer ← com-(parecer)
 desagradecer ← des-(agrad)-ecer
 
 desentumecer ← des-(entum)-ecer
+desentumecer ← des-(entumec)-er
 
 desfallecer ← des-(fall)-ecer
+desfallecer ← des-(fallec)-er
 
 desfavorecer ← des-(favor)-ecer
 
-deslucir ← +?
+deslucir ← des-(luc)-ir
 
 desmerecer ← des-(-mer)-ecer
 desmerecer ← des-(mer)-ecer
+desmerecer ← des-(merec)-er
 
-desobedecer ← +?
+desobedecer ← des-(obedec)-er
 
 negrecer ← (negr)-ecer
 
 humedecer ← +?
 
 reaparecer ← re-(apar)-ecer
+reaparecer ← re-(aparec)-er
 
 archienemigo ← archi-(enemig)-o
 
@@ -6028,9 +6036,10 @@ desamor ← des-(amor)
 
 atemporal ← a-(temporal)
 
-retraducir ← +?
+retraducir ← re-(traduc)-ir
 
 releer ← re-(l)-e-er
+releer ← re-(le)-er
 
 longitudinalmente ← (longitudinal)-mente
 
@@ -7334,7 +7343,7 @@ testarudo ← (test)-ar-udo
 
 evolucionar ← +?
 
-antedecir ← +?
+antedecir ← ante-(dec)-ir
 
 maquinalmente ← (maquin)-al-mente
 maquinalmente ← (maquinal)-mente
@@ -7364,6 +7373,7 @@ antedicho ← ante-(dich)-o
 antedicho ← ante-(dicho)
 
 esclarecer ← es-(clar)-ecer
+esclarecer ← es-(clarec)-er
 
 amorcito ← (am)-or-cito
 amorcito ← (amor)-cito
@@ -7461,7 +7471,7 @@ aplanadora ← a-(plan)-ador-a
 delicadeza ← (delicad)-ez-a
 delicadeza ← (delicad)-eza
 
-enlucir ← +?
+enlucir ← en-(luc)-ir
 
 allanamiento ← (allan)-a-miento
 allanamiento ← a-(llan)-a-miento
@@ -7587,7 +7597,7 @@ informalmente ← in-(formal)-mente
 
 figurinista ← +?
 
-reteñir ← +?
+reteñir ← re-(teñ)-ir
 
 fisioterapia ← fisio-(terapi)-a
 
@@ -7684,9 +7694,9 @@ ultraterreno ← ultra-(terren)-o
 
 untuoso ← +?
 
-sobrecoger ← +?
+sobrecoger ← sobre-(cog)-er
 
-encoger ← +?
+encoger ← en-(cog)-er
 
 hechicero ← +?
 
@@ -8384,7 +8394,7 @@ fotomultiplicador ← foto-(multiplicador)
 
 biosintético ← bio-(sintétic)-o
 
-coproducir ← +?
+coproducir ← co-(produc)-ir
 
 futurista ← (futur)-ista
 
@@ -8509,7 +8519,7 @@ lujoso ← (luj)-oso
 
 levantamiento ← (levant)-a-miento
 
-renacer ← +?
+renacer ← re-(nac)-er
 
 instantáneamente ← (instantáne)-a-mente
 
@@ -9950,7 +9960,7 @@ kilocaloría ← kilo-(calor)-í-a
 kilocaloría ← kilo-(calor)-ía
 kilocaloría ← kilo-(calorí)-a
 
-reconvertir ← +?
+reconvertir ← re-(convert)-ir
 
 malnutrición ← mal-(nutrición)
 
@@ -9958,7 +9968,7 @@ inorgánico ← in-(orgánic)-o
 
 microelemento ← micro-(element)-o
 
-reabsorber ← +?
+reabsorber ← re-(absorb)-er
 
 carburar ← +?
 
@@ -11003,6 +11013,7 @@ antepuerta ← ante-(puert)-a
 
 antetemplo ← ante-(templ)-o
 
+antever ← ante-(v)-er
 antever ← ante-(ver)
 
 antipútrido ← anti-(pútrid)-o
@@ -11923,7 +11934,7 @@ taquillero ← +?
 alargador ← (alargad)-or
 alargador ← a-(larg)-a-dor
 
-retransmitir ← +?
+retransmitir ← re-(transmit)-ir
 
 puntal ← (punt)-al
 
@@ -12452,9 +12463,9 @@ extranjerismo ← (extranjer)-ismo
 
 eficientemente ← (eficiente)-mente
 
-redecir ← +?
+redecir ← re-(dec)-ir
 
-condecir ← +?
+condecir ← con-(dec)-ir
 
 fantasiar ← +?
 
@@ -13094,7 +13105,7 @@ Márquez ← +?
 
 astronáutico ← astro-(náutic)-o
 
-redirigir ← +?
+redirigir ← re-(dirig)-ir
 
 escanciador ← (escanci)-a-dor
 escanciador ← (escanci)-ador
@@ -14678,7 +14689,7 @@ hispanohablante ← hispano-(hablante)
 
 mordisquear ← +?
 
-pervivir ← +?
+pervivir ← per-(viv)-ir
 
 hiperesfera ← hiper-(esfer)-a
 
@@ -14824,7 +14835,7 @@ poliárquico ← +?
 
 terquedad ← +?
 
-transponer ← +?
+transponer ← trans-(pon)-er
 
 vienés ← +?
 
@@ -15334,7 +15345,7 @@ zacatal ← +?
 
 venidero ← +?
 
-descomedir ← +?
+descomedir ← des-(comed)-ir
 
 tangencialmente ← (tangencial)-mente
 
@@ -16064,7 +16075,7 @@ anteromedial ← antero-(medial)
 
 autosacrificio ← auto-(sacrifici)-o
 
-sobreentender ← +?
+sobreentender ← sobre-(entend)-er
 
 coactuar ← co-(act)-uar
 coactuar ← co-(actu)-ar
@@ -16604,7 +16615,7 @@ bactericida ← (bacteri)-cida
 
 condrítico ← +?
 
-reconstituir ← +?
+reconstituir ← re-(constitu)-ir
 
 extracelular ← +?
 
@@ -17843,7 +17854,7 @@ pichoncito ← +?
 
 neumotórax ← neumo-(tórax)
 
-sobreproteger ← +?
+sobreproteger ← sobre-(proteg)-er
 
 gamita ← (gam)-ita
 
@@ -18082,7 +18093,7 @@ vicealcalde ← vice-(alcalde)
 
 viejito ← (viej)-ito
 
-malentender ← +?
+malentender ← mal-(entend)-er
 
 materializar ← (mat)-er-ial-izar
 materializar ← (materi)-al-izar
@@ -18367,7 +18378,7 @@ deslealmente ← des-(leal)-mente
 
 desmotivar ← des-(motiv)-ar
 
-desobstruir ← +?
+desobstruir ← des-(obstru)-ir
 
 difamador ← (difam)-a-dor
 difamador ← (difam)-ador
@@ -18669,7 +18680,7 @@ invertebrado ← in-(vertebr)-ado
 
 macrotienda ← macro-(tiend)-a
 
-retrotraer ← +?
+retrotraer ← retro-(tra)-er
 
 gorrito ← (gorr)-ito
 
@@ -19533,7 +19544,7 @@ desaseo ← des-(ase)-o
 
 impetuosidad ← (impetuos)-idad
 
-reconducir ← +?
+reconducir ← re-(conduc)-ir
 
 abanillo ← (aban)-illo
 abanillo ← ab-(an)-illo
@@ -19833,7 +19844,7 @@ alertamente ← (alerta)-mente
 
 antibélico ← anti-(bélic)-o
 
-copresidir ← +?
+copresidir ← co-(presid)-ir
 
 pegadizo ← (peg)-adizo
 
@@ -20222,7 +20233,7 @@ inextricablemente ← in-(extr)-ica-ble-mente
 lugareño ← (lugar)-e-ño
 lugareño ← (lugar)-eño
 
-malquerer ← +?
+malquerer ← mal-(quer)-er
 
 mutualidad ← (mutu)-al-idad
 
@@ -20663,7 +20674,7 @@ puntualización ← (puntual)-ización
 puntualización ← (puntualiz)-a-ción
 puntualización ← (puntualiz)-ación
 
-readmitir ← +?
+readmitir ← re-(admit)-ir
 
 recapitalizar ← re-(capital)-izar
 
@@ -20806,7 +20817,7 @@ recentralización ← re-(central)-ización
 reflotación ← re-(flot)-a-ción
 reflotación ← re-(flot)-ación
 
-reinvertir ← +?
+reinvertir ← re-(invert)-ir
 
 sanferminero ← +?
 
@@ -21692,9 +21703,9 @@ despóticamente ← +?
 
 desavenir ← +?
 
-desconvenir ← +?
+desconvenir ← des-(conven)-ir
 
-reconvenir ← +?
+reconvenir ← re-(conven)-ir
 
 aterosclerosis ← +?
 
@@ -22234,7 +22245,7 @@ quebequés ← +?
 
 reencauzar ← re-(encauz)-ar
 
-reintroducir ← +?
+reintroducir ← re-(introduc)-ir
 
 reputacional ← +?
 
@@ -23207,7 +23218,7 @@ preponderantemente ← pre-(pon)-dera-nte-mente
 preponderantemente ← pre-(ponder)-a-nte-mente
 preponderantemente ← pre-(ponder)-ante-mente
 
-desnacer ← +?
+desnacer ← des-(nac)-er
 
 sobrerregulación ← +?
 
@@ -23295,7 +23306,7 @@ embolización ← em-(bol)-ización
 
 internamiento ← (intern)-a-miento
 
-reimponer ← +?
+reimponer ← re-(impon)-er
 
 concesionar ← +?
 
@@ -23317,9 +23328,9 @@ cuadrito ← (cuadr)-ito
 
 ciberacosar ← ciber-(acos)-ar
 
-preconstituir ← +?
+preconstituir ← pre-(constitu)-ir
 
-preestablecer ← +?
+preestablecer ← pre-(establec)-er
 
 tienducha ← (tiend)-ucha
 
@@ -24051,7 +24062,7 @@ placenteramente ← (placenter)-a-mente
 
 regrabar ← re-(grab)-ar
 
-desnutrir ← +?
+desnutrir ← des-(nutr)-ir
 
 monotema ← (mon)-ote-ma
 monotema ← mono-(tem)-a
@@ -24101,7 +24112,7 @@ tabaquero ← +?
 
 logorreico ← (logorre)-ico
 
-desinvertir ← +?
+desinvertir ← des-(invert)-ir
 
 reactivamente ← re-(activ)-a-mente
 
@@ -24477,7 +24488,7 @@ patrimonializar ← (patrimonial)-izar
 
 ramito ← (ram)-ito
 
-reimprimir ← +?
+reimprimir ← re-(imprim)-ir
 
 prevaricador ← (prevaric)-a-dor
 prevaricador ← (prevaric)-ador
@@ -24823,7 +24834,7 @@ atascamiento ← a-(tasc)-a-miento
 
 trompetero ← (tromp)-e-tero
 
-reinscribir ← +?
+reinscribir ← re-(inscrib)-ir
 
 decembrino ← +?
 
@@ -24910,7 +24921,7 @@ brezal ← (brez)-al
 pollazo ← (poll)-az-o
 pollazo ← (poll)-azo
 
-reaprender ← +?
+reaprender ← re-(aprend)-er
 
 sobrecosto ← sobre-(cos)-to
 sobrecosto ← sobre-(cost)-o
@@ -24979,7 +24990,7 @@ sobrescribir ← +?
 
 sobrevirar ← sobre-(vir)-ar
 
-preconcebir ← +?
+preconcebir ← pre-(conceb)-ir
 
 testarudez ← +?
 
@@ -25224,7 +25235,7 @@ regentear ← (reg)-ente-ar
 regentear ← (regente)-ar
 regentear ← re-(gente)-ar
 
-sobrecumplir ← +?
+sobrecumplir ← sobre-(cumpl)-ir
 
 sobreexplotación ← sobre-(explot)-a-ción
 sobreexplotación ← sobre-(explot)-ación
@@ -25314,7 +25325,7 @@ falazmente ← (falaz)-mente
 
 machadista ← +?
 
-reemprender ← +?
+reemprender ← re-(emprend)-er
 
 interimperialista ← inter-(imperi)-al-ista
 interimperialista ← inter-(imperialist)-a
@@ -25347,7 +25358,7 @@ agroecología ← agro-(ecologí)-a
 
 estomatológico ← +?
 
-coescribir ← +?
+coescribir ← co-(escrib)-ir
 
 cristinista ← +?
 
@@ -25782,7 +25793,7 @@ oralizar ← (oral)-izar
 
 bellaquería ← +?
 
-codirigir ← +?
+codirigir ← co-(dirig)-ir
 
 afroboliviano ← +?
 
@@ -26075,7 +26086,7 @@ parasimpático ← +?
 
 rayito ← (ray)-ito
 
-sobreescribir ← +?
+sobreescribir ← sobre-(escrib)-ir
 
 chacotear ← (chacot)-e-ar
 chacotear ← (chacot)-ear
@@ -26687,7 +26698,7 @@ desistencia ← (desist)-encia
 
 desagotar ← des-(agot)-ar
 
-descomprimir ← +?
+descomprimir ← des-(comprim)-ir
 
 animalero ← (anim)-al-er-o
 animalero ← (anim)-al-ero
@@ -27580,7 +27591,7 @@ Antonito ← +?
 
 cabrerizo ← (cabr)-er-izo
 
-revencer ← +?
+revencer ← re-(venc)-er
 
 huesoso ← (hues)-o-s-o
 huesoso ← (hues)-oso
@@ -27907,7 +27918,7 @@ coimero ← (coim)-ero
 
 puneño ← +?
 
-reasumir ← +?
+reasumir ← re-(asum)-ir
 
 revanchista ← (revanch)-ista
 
@@ -28819,7 +28830,7 @@ espeluznantemente ← (espeluzn)-ante-mente
 autocensurarse ← auto-(censur)-ar-s-e
 autocensurarse ← auto-(censur)-ar-se
 
-superimponer ← +?
+superimponer ← super-(impon)-er
 
 semiabierto ← semi-(abiert)-o
 
@@ -30566,7 +30577,7 @@ eliminador ← (elimin)-ador
 
 clorofluorocarbono ← cloro-(fluorocarbon)-o
 
-reemitir ← +?
+reemitir ← re-(emit)-ir
 
 sobreinfectar ← sobre-(infect)-ar
 
@@ -30978,11 +30989,11 @@ doctrinariamente ← (doctrin)-ar-ia-mente
 doctrinariamente ← (doctrin)-aria-mente
 doctrinariamente ← (doctrinari)-a-mente
 
-sobreconsumir ← +?
+sobreconsumir ← sobre-(consum)-ir
 
 seudorrevolucionario ← +?
 
-autocorregir ← +?
+autocorregir ← auto-(correg)-ir
 
 autopresentarse ← auto-(present)-ar-se
 
@@ -31349,7 +31360,7 @@ descongestionamiento ← +?
 
 salzburgués ← +?
 
-preinscribir ← +?
+preinscribir ← pre-(inscrib)-ir
 
 aparatología ← (apar)-ato-logía
 aparatología ← (aparat)-o-logía
@@ -32177,7 +32188,7 @@ rastrar ← (rastr)-ar
 
 destrocar ← des-(troc)-ar
 
-antecoger ← +?
+antecoger ← ante-(cog)-er
 
 grandecito ← (grande)-cito
 
@@ -32320,7 +32331,7 @@ sobreexcitar ← sobre-(excit)-ar
 
 escalofriar ← +?
 
-radiodifundir ← +?
+radiodifundir ← radio-(difund)-ir
 
 mariscar ← +?
 
@@ -32619,7 +32630,7 @@ encajero ← en-(caj)-ero
 garrapatero ← (garrapat)-er-o
 garrapatero ← (garrapat)-ero
 
-readquirir ← +?
+readquirir ← re-(adquir)-ir
 
 autoenfoque ← auto-(enfoque)
 
@@ -32678,7 +32689,7 @@ decisegundo ← deci-(segund)-o
 
 sobregrabar ← sobre-(grab)-ar
 
-redescribir ← +?
+redescribir ← re-(describ)-ir
 
 chilota ← +?
 
@@ -32786,7 +32797,7 @@ prevesical ← pre-(vesical)
 
 retroduodenal ← retro-(duoden)-al
 
-subentender ← +?
+subentender ← sub-(entend)-er
 
 tijeretear ← (tijer)-ete-ar
 
@@ -33027,7 +33038,7 @@ tarjar ← (tarj)-ar
 
 taponazo ← +?
 
-rezurcir ← +?
+rezurcir ← re-(zurc)-ir
 
 dragonear ← +?
 
@@ -35207,7 +35218,7 @@ estiriano ← +?
 
 carintio ← +?
 
-autodirigir ← +?
+autodirigir ← auto-(dirig)-ir
 
 prequemador ← pre-(quem)-a-dor
 prequemador ← pre-(quem)-ador
@@ -35566,7 +35577,7 @@ torcimiento ← +?
 
 mimbrear ← (mimbre)-ar
 
-premunir ← +?
+premunir ← pre-(mun)-ir
 
 lerdamente ← (lerd)-a-mente
 
@@ -35951,6 +35962,7 @@ acertar ← (acer)-tar
 acertar ← a-(cer)-tar
 
 acontecer ← a-(cont)-ecer
+acontecer ← a-(contec)-er
 
 acreditar ← +?
 
@@ -36285,7 +36297,7 @@ colgadizo ← (colgad)-izo
 
 comisionista ← (comision)-ista
 
-compadecer ← +?
+compadecer ← com-(padec)-er
 
 compartimiento ← +?
 
@@ -36315,7 +36327,7 @@ desacuerdo ← des-(acuerd)-o
 
 desalentar ← des-(alent)-ar
 
-desatender ← +?
+desatender ← des-(atend)-er
 
 descortezar ← des-(cort)-e-zar
 descortezar ← des-(cort)-ez-ar
@@ -36374,6 +36386,7 @@ entrecruzar ← entre-(cruz)-ar
 entrelazar ← entre-(l)-a-zar
 entrelazar ← entre-(laz)-ar
 
+entretener ← entre-(ten)-er
 entretener ← entre-(tener)
 
 escardillo ← (escard)-illo
@@ -36432,7 +36445,7 @@ sucesivamente ← (sucesiva)-mente
 subordinado ← (subordin)-a-do
 subordinado ← (subordin)-ado
 
-sorprender ← +?
+sorprender ← sor-(prend)-er
 
 solemnizar ← +?
 
@@ -36492,6 +36505,7 @@ tocador ← (tocad)-or
 
 pelada ← (pel)-ada
 
+aguerrir ← (aguerr)-ir
 aguerrir ← a-(guerr)-ir
 
 vaquero ← (vaquer)-o
@@ -36870,6 +36884,7 @@ aderezar ← a-(derez)-ar
 adeudar ← a-(deud)-ar
 
 adolecer ← a-(dol)-ecer
+adolecer ← a-(dolec)-er
 
 aislar ← a-(isl)-ar
 
@@ -37096,7 +37111,7 @@ intercambiar ← inter-(cambi)-ar
 abrasar ← (abr)-a-s-ar
 abrasar ← ab-(ras)-ar
 
-acoger ← +?
+acoger ← a-(cog)-er
 
 caracterizar ← +?
 
@@ -37254,7 +37269,7 @@ sordera ← sor-(d)-era
 
 pepinillo ← (pepin)-illo
 
-recomponer ← +?
+recomponer ← re-(compon)-er
 
 triunfar ← (triunf)-ar
 
@@ -38496,7 +38511,7 @@ caballerazo ← (caball)-er-azo
 
 alcahuetar ← +?
 
-entreabrir ← +?
+entreabrir ← entre-(abr)-ir
 
 remolinar ← re-(molin)-ar
 
@@ -39638,6 +39653,7 @@ territorializar ← (territori)-al-izar
 sincrónico ← +?
 
 decaer ← (dec)-a-er
+decaer ← de-(ca)-er
 decaer ← de-(caer)
 decaer ← deca-(-er)
 
@@ -40230,7 +40246,7 @@ isomerización ← i-(som)-er-ización
 isomerización ← iso-(-mer)-ización
 isomerización ← iso-(mer)-ización
 
-resurtir ← +?
+resurtir ← re-(surt)-ir
 
 polimerizar ← poli-(-mer)-izar
 polimerizar ← poli-(mer)-izar
@@ -41977,7 +41993,7 @@ portuario ← +?
 
 portugalujo ← +?
 
-preconocer ← +?
+preconocer ← pre-(conoc)-er
 
 interconexión ← inter-(conex)-ión
 interconexión ← inter-(conexión)
@@ -42091,7 +42107,7 @@ Rentería ← +?
 
 reseñar ← re-(señ)-ar
 
-encurtir ← +?
+encurtir ← en-(curt)-ir
 
 escarpia ← (escarp)-ia
 escarpia ← es-(carp)-ia
@@ -42889,7 +42905,7 @@ tozuelo ← (toz)-uelo
 
 bolar ← (bol)-ar
 
-coludir ← +?
+coludir ← co-(lud)-ir
 
 paráfrasis ← +?
 
@@ -43311,7 +43327,7 @@ abrazamiento ← ab-(raz)-a-miento
 abrazamiento ← ab-(raz)-amiento
 abrazamiento ← ab-(raza)-miento
 
-conseguir ← +?
+conseguir ← con-(segu)-ir
 
 abiogénesis ← +?
 
@@ -43826,7 +43842,7 @@ quincena ← +?
 
 desinhibido ← des-(inhib)-ido
 
-desinhibir ← +?
+desinhibir ← des-(inhib)-ir
 
 pergeñar ← (pergeñ)-ar
 
@@ -43839,7 +43855,7 @@ brazada ← (braz)-ada
 
 braceada ← +?
 
-reconstruir ← +?
+reconstruir ← re-(constru)-ir
 
 aeronauta ← a-(-er)-o-nauta
 aeronauta ← aero-(naut)-a
@@ -43937,7 +43953,7 @@ pescante ← (pesc)-ante
 
 pesebrera ← +?
 
-rehinchir ← +?
+rehinchir ← re-(hinch)-ir
 
 riostrar ← (riostr)-ar
 
@@ -44211,7 +44227,7 @@ paracaidista ← +?
 entendederas ← (entend)-e-dera-s
 entendederas ← en-(tend)-e-dera-s
 
-empercudir ← +?
+empercudir ← em-(percud)-ir
 
 chachahuanteco ← +?
 
@@ -44601,7 +44617,7 @@ repeor ← re-(peor)
 
 remiel ← re-(miel)
 
-regañir ← +?
+regañir ← re-(gañ)-ir
 
 limpiamiento ← (limpi)-a-miento
 
@@ -44743,7 +44759,7 @@ simplismo ← +?
 
 renombrar ← re-(nombr)-ar
 
-resurgir ← +?
+resurgir ← re-(surg)-ir
 
 abogadismo ← (abogad)-ismo
 
@@ -45947,7 +45963,7 @@ supercianato ← super-(cian)-ato
 
 supercloruro ← super-(clor)-uro
 
-supercrecer ← +?
+supercrecer ← super-(crec)-er
 
 supercromato ← super-(cromat)-o
 
@@ -45969,7 +45985,7 @@ huachuchero ← (huachuch)-ero
 
 subtítulo ← sub-(títul)-o
 
-subtraer ← +?
+subtraer ← sub-(tra)-er
 
 fantasmagóricamente ← +?
 
@@ -46143,7 +46159,7 @@ sobrevivimiento ← +?
 
 sobrevividor ← sobre-(viv)-idor
 
-sobreexceder ← +?
+sobreexceder ← sobre-(exced)-er
 
 sobreexcederse ← +?
 
@@ -46151,7 +46167,7 @@ sobresceder ← +?
 
 sobrescederse ← +?
 
-sobrevestir ← +?
+sobrevestir ← sobre-(vest)-ir
 
 firmamiento ← (firm)-a-miento
 firmamiento ← (firm)-amiento
@@ -46333,7 +46349,7 @@ equidistante ← equi-(dist)-ante
 
 equidistar ← equi-(dist)-ar
 
-requerer ← +?
+requerer ← re-(quer)-er
 
 requintar ← re-(quin)-tar
 requintar ← re-(quint)-ar
@@ -47360,7 +47376,7 @@ heptadecágono ← hepta-(decágon)-o
 
 exiliar ← (exili)-ar
 
-desproveer ← +?
+desproveer ← des-(prove)-er
 
 Juanita ← (Juan)-ita
 
@@ -48984,7 +49000,7 @@ pitarroso ← (pitarr)-oso
 lagartón ← (lag)-ar-tón
 lagartón ← (lagart)-ón
 
-reincidir ← +?
+reincidir ← re-(incid)-ir
 
 valorear ← (v)-al-or-e-ar
 valorear ← (v)-al-or-ear
@@ -49359,7 +49375,7 @@ porrazo ← (porr)-azo
 
 suponedor ← (supon)-e-dor
 
-presuponer ← +?
+presuponer ← pre-(supon)-er
 
 folclorista ← (folclor)-ista
 
@@ -49484,7 +49500,7 @@ prohibitivo ← (prohib)-itivo
 
 prohibitorio ← (prohib)-ito-rio
 
-desprohibir ← +?
+desprohibir ← des-(prohib)-ir
 
 desprohibición ← +?
 
@@ -50212,7 +50228,7 @@ inmeritorio ← in-(merit)-o-rio
 inmeritorio ← in-(merit)-or-io
 inmeritorio ← in-(meritori)-o
 
-resentir ← +?
+resentir ← re-(sent)-ir
 
 sentidamente ← (sent)-ida-mente
 
@@ -50899,6 +50915,7 @@ magrez ← (magr)-ez
 magrura ← (magr)-ura
 
 enmagrecer ← en-(magr)-ecer
+enmagrecer ← en-(magrec)-er
 
 atontamiento ← (at)-o-nta-miento
 atontamiento ← (atont)-a-miento
@@ -50917,7 +50934,7 @@ arbitrable ← +?
 
 creyente ← (cre)-yente
 
-descreer ← +?
+descreer ← des-(cre)-er
 
 descreimiento ← +?
 
@@ -51005,7 +51022,7 @@ empeñador ← em-(peñ)-ador
 
 grancolombiano ← +?
 
-reargüir ← +?
+reargüir ← re-(argü)-ir
 
 mercader ← (mercad)-er
 
@@ -51021,6 +51038,7 @@ mercadería ← (mercad)-ería
 mercadear ← (mercad)-e-ar
 mercadear ← (mercad)-ear
 
+prever ← pre-(v)-er
 prever ← pre-(ver)
 
 mercantilismo ← +?
@@ -51671,7 +51689,7 @@ sangrante ← +?
 
 quincenario ← +?
 
-reproducir ← +?
+reproducir ← re-(produc)-ir
 
 transfregar ← trans-(freg)-ar
 
@@ -51708,11 +51726,11 @@ predominancia ← pre-(domin)-ancia
 predominación ← pre-(domin)-a-ción
 predominación ← pre-(domin)-ación
 
-reverdecer ← +?
+reverdecer ← re-(verdec)-er
 
-enverdecer ← +?
+enverdecer ← en-(verdec)-er
 
-rejuvenecer ← +?
+rejuvenecer ← re-(juvenec)-er
 
 rejuvenecedor ← re-(juvenec)-e-dor
 
@@ -51766,40 +51784,42 @@ desaislar ← +?
 
 orgullecer ← (orgull)-ecer
 
-desensoberbecer ← +?
+desensoberbecer ← des-(ensoberbec)-er
 
-desenfurecer ← +?
+desenfurecer ← des-(enfurec)-er
 
-desentorpecer ← +?
+desentorpecer ← des-(entorpec)-er
 
 fosforecer ← +?
 
-desenmohecer ← +?
+desenmohecer ← des-(enmohec)-er
 
 bipolar ← bi-(pol)-ar
 bipolar ← bi-(polar)
 
 emplastecer ← (emplast)-ecer
 emplastecer ← em-(plast)-ecer
+emplastecer ← em-(plastec)-er
 
 orgulleza ← (orgull)-ez-a
 orgulleza ← (orgull)-eza
 
 florar ← (flor)-ar
 
-descrecer ← +?
+descrecer ← des-(crec)-er
 
 aplacer ← a-(plac)-er
 
-desembravecer ← +?
+desembravecer ← des-(embravec)-er
 
 mohecer ← (moh)-ecer
 
 orinecer ← (orin)-ecer
 
 desadormecer ← des-(adorm)-ecer
+desadormecer ← des-(adormec)-er
 
-desentumir ← +?
+desentumir ← des-(entum)-ir
 
 evaporizar ← (evapor)-izar
 
@@ -51822,7 +51842,7 @@ adentros ← +?
 sonrojear ← (sonroj)-e-ar
 sonrojear ← (sonroj)-ear
 
-desenrudecer ← +?
+desenrudecer ← des-(enrudec)-er
 
 rehumedecer ← +?
 
@@ -51830,7 +51850,7 @@ deshumedecer ← +?
 
 desencarecer ← +?
 
-desenmudecer ← +?
+desenmudecer ← des-(enmudec)-er
 
 entullecer ← en-(tull)-ecer
 
@@ -51852,7 +51872,7 @@ empedernecer ← (empedern)-ecer
 
 mustiar ← (musti)-ar
 
-desoprimir ← +?
+desoprimir ← des-(oprim)-ir
 
 cardal ← (card)-al
 
@@ -51868,7 +51888,7 @@ visionario ← +?
 
 embustir ← +?
 
-desguarnir ← +?
+desguarnir ← des-(guarn)-ir
 
 deshebillar ← des-(hebill)-ar
 
@@ -51876,7 +51896,7 @@ hebillar ← (hebill)-ar
 
 enhebillar ← en-(hebill)-ar
 
-desurdir ← +?
+desurdir ← des-(urd)-ir
 
 transido ← (trans)-ido
 
@@ -51905,9 +51925,9 @@ preexistente ← (preexist)-ente
 preexistente ← pre-(exist)-e-nte
 preexistente ← pre-(exist)-ente
 
-despercudir ← +?
+despercudir ← des-(percud)-ir
 
-descurtir ← +?
+descurtir ← des-(curt)-ir
 
 desempercudir ← +?
 
@@ -52115,7 +52135,7 @@ sitial ← (siti)-al
 
 llevadero ← (llev)-a-dero
 
-desaprender ← +?
+desaprender ← des-(aprend)-er
 
 ruedita ← (rued)-ita
 
@@ -52148,7 +52168,7 @@ escaramuzador ← (escaramuz)-ador
 
 desnutrición ← des-(nutrición)
 
-desmullir ← +?
+desmullir ← des-(mull)-ir
 
 guaminense ← +?
 
@@ -52226,7 +52246,7 @@ flacucho ← (flac)-ucho
 
 desentenderse ← +?
 
-superentender ← +?
+superentender ← super-(entend)-er
 
 entendedor ← (entend)-e-dor
 entendedor ← en-(tend)-e-dor
@@ -53005,7 +53025,7 @@ aconhortar ← a-(conhort)-ar
 
 confortamiento ← (confort)-a-miento
 
-desabrir ← +?
+desabrir ← des-(abr)-ir
 
 neviscar ← (nevisc)-ar
 
@@ -53166,7 +53186,7 @@ vagabundeo ← (vagabund)-eo
 balbuceos ← (balbuc)-e-o-s
 balbuceos ← (balbuc)-eo-s
 
-rehenchir ← +?
+rehenchir ← re-(hench)-ir
 
 henchidura ← +?
 
@@ -53260,7 +53280,7 @@ cedulario ← +?
 
 cefalálgico ← +?
 
-sorprehender ← +?
+sorprehender ← sor-(prehend)-er
 
 novelista ← (novel)-ista
 
@@ -53360,6 +53380,7 @@ desasir ← (d)-e-s-a-s-ir
 desasir ← (de)-s-a-s-ir
 desasir ← (des)-a-s-ir
 desasir ← de-(s)-a-s-ir
+desasir ← des-(as)-ir
 
 fuentón ← +?
 
@@ -53376,7 +53397,7 @@ ofuscamiento ← (ofusc)-a-miento
 
 fletar ← +?
 
-desuncir ← +?
+desuncir ← des-(unc)-ir
 
 adoquinar ← +?
 
@@ -57975,7 +57996,7 @@ barequero ← +?
 
 pereda ← (per)-eda
 
-destender ← +?
+destender ← des-(tend)-er
 
 miquear ← +?
 
@@ -58504,7 +58525,7 @@ enhadar ← en-(had)-ar
 
 desenhastiar ← des-(enhasti)-ar
 
-desaburrir ← +?
+desaburrir ← des-(aburr)-ir
 
 desenhetrar ← des-(enhetr)-ar
 
@@ -58556,7 +58577,7 @@ desfiuzar ← +?
 desgraduar ← des-(grad)-uar
 desgraduar ← des-(gradu)-ar
 
-desmoler ← +?
+desmoler ← des-(mol)-er
 
 despagar ← des-(pag)-ar
 
@@ -58804,7 +58825,7 @@ enervante ← (enerv)-a-nte
 enervante ← (enerv)-ante
 enervante ← (enerva)-nte
 
-reafluir ← +?
+reafluir ← re-(aflu)-ir
 
 tapicería ← +?
 
@@ -60538,9 +60559,9 @@ destesorizar ← des-(tes)-or-izar
 destesorizar ← des-(tesor)-izar
 destesorizar ← des-(tesoriz)-ar
 
-sobreverter ← +?
+sobreverter ← sobre-(vert)-er
 
-coextender ← +?
+coextender ← co-(extend)-er
 
 estudiador ← (estudi)-a-dor
 estudiador ← (estudi)-ador
@@ -60556,7 +60577,7 @@ exaltador ← exa-(l)-tad-or
 
 estremecedor ← (estremec)-e-dor
 
-entredormir ← +?
+entredormir ← entre-(dorm)-ir
 
 horadador ← (hor)-a-dad-or
 horadador ← (hor)-ada-dor
@@ -75049,13 +75070,13 @@ acuciante ← (acuci)-a-nte
 acuciante ← (acuci)-ante
 acuciante ← a-(cuc)-ia-nte
 
-conmulcer ← +?
+conmulcer ← con-(mulc)-er
 
-demulcer ← +?
+demulcer ← de-(mulc)-er
 
-permulcer ← +?
+permulcer ← per-(mulc)-er
 
-remulcer ← +?
+remulcer ← re-(mulc)-er
 
 gajoso ← (gaj)-o-s-o
 gajoso ← (gaj)-oso
@@ -75260,7 +75281,7 @@ aleteo ← a-(l)-ete-o
 
 biesfenoide ← bi-(esfenoide)
 
-discernir ← +?
+discernir ← dis-(cern)-ir
 
 catalizar ← (cat)-al-izar
 
@@ -76153,7 +76174,7 @@ trasteo ← (trast)-e-o
 trasteo ← (trast)-eo
 trasteo ← tras-(te)-o
 
-inmulger ← +?
+inmulger ← in-(mulg)-er
 
 acoderamiento ← (acod)-era-miento
 acoderamiento ← (acoder)-a-miento
@@ -76531,8 +76552,10 @@ compartir ← com-(part)-ir
 
 partirse ← (part)-ir-se
 
+atener ← a-(ten)-er
 atener ← a-(tener)
 
+retener ← re-(ten)-er
 retener ← re-(tener)
 
 antevenir ← ante-(ven)-ir
@@ -78264,7 +78287,7 @@ disfrutar ← dis-(frut)-ar
 
 intervenir ← inter-(ven)-ir
 
-discutir ← +?
+discutir ← dis-(cut)-ir
 
 destacar ← des-(tac)-ar
 
@@ -78319,26 +78342,26 @@ intercalar ← inter-(cal)-ar
 malbaratar ← mal-(bar)-a-tar
 malbaratar ← mal-(barat)-ar
 
-malvivir ← +?
+malvivir ← mal-(viv)-ir
 
-subdividir ← +?
+subdividir ← sub-(divid)-ir
 
 sublevar ← sub-(lev)-ar
 
 sublimar ← sub-(lim)-ar
 
-maldecir ← +?
+maldecir ← mal-(dec)-ir
 
 destrozar ← des-(troz)-ar
 
-contradecir ← +?
+contradecir ← contra-(dec)-ir
 
-desdecir ← +?
+desdecir ← des-(dec)-ir
 
 descalzar ← des-(cal)-zar
 descalzar ← des-(calz)-ar
 
-disponer ← +?
+disponer ← dis-(pon)-er
 
 discriminar ← dis-(crimin)-ar
 
@@ -78348,21 +78371,22 @@ interferir ← inter-(fer)-ir
 
 contravenir ← contra-(ven)-ir
 
-malherir ← +?
+malherir ← mal-(her)-ir
 
 desbastar ← des-(bast)-ar
 
-sobreponer ← +?
+sobreponer ← sobre-(pon)-er
 
-contrahacer ← +?
+contrahacer ← contra-(hac)-er
 
-interponer ← +?
+interponer ← inter-(pon)-er
 
 equivaler ← equi-(v)-al-er
+equivaler ← equi-(val)-er
 
-contraponer ← +?
+contraponer ← contra-(pon)-er
 
-distraer ← +?
+distraer ← dis-(tra)-er
 
 destocar ← des-(toc)-ar
 
@@ -78378,14 +78402,15 @@ descachar ← des-(cach)-ar
 sobreseer ← (sobr)-e-s-e-er
 sobreseer ← (sobre)-s-e-er
 sobreseer ← sobre-(s)-e-er
+sobreseer ← sobre-(se)-er
 
 sobredimensionar ← +?
 
-interdecir ← +?
+interdecir ← inter-(dec)-ir
 
 subvenir ← sub-(ven)-ir
 
-subyacer ← +?
+subyacer ← sub-(yac)-er
 
 desmandar ← des-(mand)-ar
 
@@ -78405,13 +78430,13 @@ desflorar ← des-(flor)-ar
 
 destemplar ← des-(templ)-ar
 
-interconvertir ← +?
+interconvertir ← inter-(convert)-ir
 
 desmesurar ← des-(mesur)-ar
 
 descorchar ← des-(corch)-ar
 
-subtender ← +?
+subtender ← sub-(tend)-er
 
 desconsolar ← des-(consol)-ar
 
@@ -78419,7 +78444,7 @@ desconsiderar ← des-(consider)-ar
 
 desmochar ← des-(moch)-ar
 
-desproteger ← +?
+desproteger ← des-(proteg)-er
 
 intermediar ← (intermedi)-ar
 intermediar ← inter-(medi)-ar
@@ -78428,7 +78453,7 @@ subrogar ← sub-(rog)-ar
 
 subsumir ← sub-(sum)-ir
 
-distender ← +?
+distender ← dis-(tend)-er
 
 interrelacionar ← +?
 
@@ -78534,8 +78559,9 @@ desplomar ← des-(plom)-ar
 discapacitar ← dis-(capacit)-ar
 
 desperecer ← des-(per)-ecer
+desperecer ← des-(perec)-er
 
-desvivir ← +?
+desvivir ← des-(viv)-ir
 
 malcriar ← mal-(cri)-ar
 
@@ -78546,7 +78572,7 @@ despartidizar ← des-(partid)-izar
 discursar ← dis-(cur)-s-ar
 discursar ← dis-(curs)-ar
 
-malponer ← +?
+malponer ← mal-(pon)-er
 
 desregularizar ← des-(regular)-izar
 
@@ -78573,9 +78599,9 @@ destrenzar ← des-(trenz)-ar
 
 malparir ← mal-(par)-ir
 
-descoger ← +?
+descoger ← des-(cog)-er
 
-maltraer ← +?
+maltraer ← mal-(tra)-er
 
 despoetizar ← des-(poet)-izar
 
@@ -78594,7 +78620,7 @@ descampar ← des-(camp)-ar
 
 desprofesionalizar ← +?
 
-desceñir ← +?
+desceñir ← des-(ceñ)-ir
 
 desjarretar ← des-(jarr)-e-tar
 desjarretar ← des-(jarret)-ar
@@ -78616,7 +78642,7 @@ desquebrajar ← des-(quebraj)-ar
 
 descalibrar ← +?
 
-destupir ← +?
+destupir ← des-(tup)-ir
 
 desventar ← des-(ven)-tar
 desventar ← des-(vent)-ar
@@ -78695,9 +78721,10 @@ disvariar ← dis-(v)-ar-iar
 disvariar ← dis-(var)-iar
 disvariar ← dis-(vari)-ar
 
-sobrecrecer ← +?
+sobrecrecer ← sobre-(crec)-er
 
 desflorecer ← des-(flor)-ecer
+desflorecer ← des-(florec)-er
 
 despartir ← des-(part)-ir
 
@@ -78714,15 +78741,16 @@ deshonestar ← des-(honest)-ar
 
 descrismar ← des-(crism)-ar
 
-desfruncir ← +?
+desfruncir ← des-(frunc)-ir
 
-desquerer ← +?
+desquerer ← des-(quer)-er
 
+descaer ← des-(ca)-er
 descaer ← des-(caer)
 
 desfacer ← des-(fac)-er
 
-subdistinguir ← +?
+subdistinguir ← sub-(distingu)-ir
 
 contrafallar ← contra-(fall)-ar
 
@@ -78961,7 +78989,7 @@ sobreganar ← sobre-(gan)-ar
 
 sobresanar ← sobre-(san)-ar
 
-desvolver ← +?
+desvolver ← des-(volv)-er
 
 contrapunzar ← contra-(punz)-ar
 
@@ -79029,24 +79057,24 @@ desnevar ← des-(nev)-ar
 
 sobresembrar ← sobre-(sembr)-ar
 
-desbeber ← +?
+desbeber ← des-(beb)-er
 
 interprender ← inter-(prend)-er
 
-malmeter ← +?
+malmeter ← mal-(met)-er
 
-sobrebeber ← +?
+sobrebeber ← sobre-(beb)-er
 
 sobrehilar ← sobre-(hil)-ar
 
-desconsentir ← +?
+desconsentir ← des-(consent)-ir
 
 desnegar ← des-(neg)-ar
 desnegar ← des-(negar)
 
 desmenguar ← des-(mengu)-ar
 
-disconvenir ← +?
+disconvenir ← dis-(conven)-ir
 
 desmanar ← des-(man)-ar
 
@@ -79076,7 +79104,7 @@ desmurar ← des-(mur)-ar
 
 desparar ← des-(par)-ar
 
-despender ← +?
+despender ← des-(pend)-er
 
 despullar ← des-(pull)-ar
 

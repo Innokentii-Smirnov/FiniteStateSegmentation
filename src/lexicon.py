@@ -44,10 +44,12 @@ class Lexicon:
 
   @property
   def lexicon_order(self) -> list[str]:
-    return ([ROOT_LEXICON_NAME]
+    order = ([ROOT_LEXICON_NAME]
       + [part_of_speech + 'Root' for part_of_speech in self.parts_of_speech]
       + [PREFIX_LEXICON_NAME]
       + self.parts_of_speech)
+    other = sorted(set(self.lexicons) - set(order))
+    return order + other
 
   def add(self, row: DerivationalPair) -> None:
     form: str = add_boundary(row.affix, row.affix_type)
@@ -69,7 +71,14 @@ class Lexicon:
   def add_root(self, citation_form: str, part_of_speech: str) -> None:
     root, ending = self.detach_ending(citation_form, part_of_speech)
     if ' ' not in root:
-      self.lexicons[part_of_speech + 'Root'].add(Entry( '({0})'.format(root), part_of_speech))
+      inflectional_class_lexicon_name = part_of_speech + ending
+      self.lexicons[part_of_speech + 'Root'].add(Entry( '({0})'.format(root), inflectional_class_lexicon_name))
+      if ending == '':
+        ending_entry: Entry | ClassEntry = END_OF_WORD_ENTRY
+      else:
+        ending_entry = Entry('-' + ending, END_OF_WORD_NEXT_CLASS)
+      self.lexicons[inflectional_class_lexicon_name].add(ending_entry)
+      self.lexicons[inflectional_class_lexicon_name].add(ClassEntry(part_of_speech))
 
   def store(self, file_name: str) -> None:
     with open(file_name, 'w', encoding='utf-8') as fout:
