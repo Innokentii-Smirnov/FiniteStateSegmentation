@@ -38,13 +38,19 @@ class Lexicon:
     for part_of_speech in parts_of_speech:
       root_lexicon.add(ClassEntry(part_of_speech + 'Root'))
     self.endings = endings
+    for part_of_speech, ending_list in self.endings.items():
+      for ending_form in ending_list:
+        paradigm_class = get_paradigm_class(part_of_speech, ending_form)
+        ending = Morpheme(ending_form, paradigm_class, END_OF_WORD_NEXT_CLASS, 'suffix')
+        self.add_ending(ending)
+        self.enable_derivation(paradigm_class, part_of_speech)
 
   def detach_ending(self, form: str, part_of_speech: str, is_root: bool) -> tuple[str, str]:
     endings = self.endings[part_of_speech]
     for ending in endings:
       if len(ending) < len(form) and form.endswith(ending):
         if not is_root or len(form) - len(ending) > 1:
-          return form[:-len(ending)], ending
+          return form[:len(form)-len(ending)], ending
     return form, ''
 
   @property
@@ -68,15 +74,13 @@ class Lexicon:
           morpheme = Morpheme(row.affix, PREFIX_LEXICON_NAME, next_class, 'prefix')
           self.add_morph(morpheme)
       case 'suffix':
-        suffix, ending = self.detach_ending_from_suffix(row.affix, row.base_pos, row.deriv_pos)
+        suffix = self.detach_ending_from_suffix(row.affix, row.base_pos, row.deriv_pos)
         self.add_morph(suffix)
-        self.add_ending(ending)
 
   def add_citation_form(self, citation_form: str, part_of_speech: str) -> None:
     if ' ' not in citation_form:
-      root, ending = self.detach_ending_from_root(citation_form, part_of_speech)
+      root = self.detach_ending_from_root(citation_form, part_of_speech)
       self.add_morph(root)
-      self.add_ending(ending)
 
   def add_ending(self, ending: Morpheme) -> None:
     if ending.form != '':
@@ -84,21 +88,19 @@ class Lexicon:
     else:
       self.enable_derivation(ending.positional_class, END_OF_WORD_NEXT_CLASS)
 
-  def detach_ending_from_root(self, citation_form: str, part_of_speech: str) -> tuple[Morpheme, Morpheme]:
+  def detach_ending_from_root(self, citation_form: str, part_of_speech: str) -> Morpheme:
     root_form, ending_form = self.detach_ending(citation_form, part_of_speech, True)
     paradigm_class = get_paradigm_class(part_of_speech, ending_form)
-    self.enable_derivation(paradigm_class, part_of_speech)
+    if root_form == '':
+      raise ValueError(citation_form + ' ' + part_of_speech)
     root = Morpheme(root_form, get_root_positional_class(part_of_speech), paradigm_class, 'root')
-    ending = Morpheme(ending_form, paradigm_class, END_OF_WORD_NEXT_CLASS, 'suffix')
-    return root, ending
+    return root
 
-  def detach_ending_from_suffix(self, suffix_with_ending: str, base_pos: str, deriv_pos: str) -> tuple[Morpheme, Morpheme]:
+  def detach_ending_from_suffix(self, suffix_with_ending: str, base_pos: str, deriv_pos: str) -> Morpheme:
     suffix_form, ending_form = self.detach_ending(suffix_with_ending, deriv_pos, False)
     paradigm_class = get_paradigm_class(deriv_pos, ending_form)
-    self.enable_derivation(paradigm_class, deriv_pos)
     suffix = Morpheme(suffix_form, get_suffix_positional_class(base_pos), paradigm_class, 'suffix')
-    ending = Morpheme(ending_form, paradigm_class, END_OF_WORD_NEXT_CLASS, 'suffix')
-    return suffix, ending
+    return suffix
 
   def enable_derivation(self, positional_class: str, next_positional_class: str) -> None:
     self.lexicons[positional_class].add(ClassEntry(next_positional_class))
