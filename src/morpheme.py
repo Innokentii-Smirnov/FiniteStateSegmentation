@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from typing import Literal
 
+ROOT_TEMPLATE = '({0})'
 MORPHEME_BOUNDARY = '-'
 
 @dataclass(frozen=True, order=True)
@@ -16,6 +17,6 @@ class Morpheme:
       case 'prefix':
         return self.form + MORPHEME_BOUNDARY
       case 'root':
-        return self.form
+        return ROOT_TEMPLATE.format(self.form)
       case 'suffix':
         return MORPHEME_BOUNDARY + self.form
