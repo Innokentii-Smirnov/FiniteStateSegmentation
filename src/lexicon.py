@@ -32,7 +32,6 @@ class Lexicon:
     root_lexicon.add(PREFIX_CLASS_ENTRY)
     for part_of_speech in parts_of_speech:
       root_lexicon.add(ClassEntry(part_of_speech + 'Root'))
-      self.lexicons[part_of_speech].add(END_OF_WORD_ENTRY)
     self.endings = endings
 
   def detach_ending(self, form: str, part_of_speech: str) -> tuple[str, str]:
