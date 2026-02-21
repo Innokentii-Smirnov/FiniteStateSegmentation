@@ -37,7 +37,7 @@ class Lexicon:
   def detach_ending(self, form: str, part_of_speech: str) -> tuple[str, str]:
     endings = self.endings[part_of_speech]
     for ending in endings:
-      if len(ending) < len(form) and form.endswith(ending):
+      if len(ending) < len(form) and form.endswith(ending) and form != '-' + ending:
         return form[:-len(ending)], ending
     return form, ''
 
@@ -57,28 +57,30 @@ class Lexicon:
         if row.base_pos == row.deriv_pos:
           lexicon_name = PREFIX_LEXICON_NAME
           next_class: str = row.base_pos + 'Root'
-        else:
-          return
+          entry = Entry(form, next_class)
+          self.lexicons[lexicon_name].add(entry)
       case 'suffix':
-        lexicon_name = row.base_pos
-        next_class = row.deriv_pos
-      case _:
-        return
-    entry = Entry(form, next_class)
-    self.lexicons[lexicon_name].add(entry)
+        self.add_morpheme(form, row.base_pos, False, row.deriv_pos)
 
-  def add_root(self, citation_form: str, part_of_speech: str) -> None:
-    root, ending = self.detach_ending(citation_form, part_of_speech)
-    if ' ' not in root:
+  def add_morpheme(self, citation_form: str, part_of_speech: str, is_root: bool,
+                   next_class: str) -> None:
+    morpheme, ending = self.detach_ending(citation_form, next_class)
+    if is_root:
+      form = '({0})'.format(morpheme)
+      main_lexicon = part_of_speech + 'Root'
+    else:
+      form = morpheme
+      main_lexicon = part_of_speech
+    if ' ' not in morpheme:
       if ending == '':
-        inflectional_class_lexicon_name = part_of_speech + 'zero'
+        inflectional_class_lexicon_name = next_class + 'zero'
         ending_entry: Entry | ClassEntry = END_OF_WORD_ENTRY
       else:
-        inflectional_class_lexicon_name = part_of_speech + ending
+        inflectional_class_lexicon_name = next_class + ending
         ending_entry = Entry('-' + ending, END_OF_WORD_NEXT_CLASS)
-      self.lexicons[part_of_speech + 'Root'].add(Entry( '({0})'.format(root), inflectional_class_lexicon_name))
+      self.lexicons[main_lexicon].add(Entry(form, inflectional_class_lexicon_name))
       self.lexicons[inflectional_class_lexicon_name].add(ending_entry)
-      self.lexicons[inflectional_class_lexicon_name].add(ClassEntry(part_of_speech))
+      self.lexicons[inflectional_class_lexicon_name].add(ClassEntry(next_class))
 
   def store(self, file_name: str) -> None:
     with open(file_name, 'w', encoding='utf-8') as fout:
