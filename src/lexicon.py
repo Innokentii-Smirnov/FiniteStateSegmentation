@@ -11,15 +11,19 @@ END_OF_WORD_NEXT_CLASS = '#'
 END_OF_WORD_ENTRY = ClassEntry(END_OF_WORD_NEXT_CLASS)
 LEXICON_HEADER_TEMPLATE = 'LEXICON {0}'
 MORPHEME_BOUNDARY = '-'
+ZERO_ENDING_MARKER = 'zero'
 
-def add_boundary(affix_form: str, affix_type: str) -> str:
-  match affix_type:
-    case 'prefix':
-      return affix_form + MORPHEME_BOUNDARY
-    case 'suffix':
-      return MORPHEME_BOUNDARY + affix_form
-    case _:
-      raise ValueError('Unsupported affix type: {0}.'.format(affix_type))
+def get_root_positional_class(part_of_speech: str) -> str:
+  return part_of_speech + 'Root'
+
+def get_suffix_positional_class(base_pos: str) -> str:
+  return base_pos
+
+def get_paradigm_class(part_of_speech: str, citation_form_ending: str) -> str:
+  if citation_form_ending != '':
+    return part_of_speech + citation_form_ending
+  else:
+    return part_of_speech + ZERO_ENDING_MARKER
 
 class Lexicon:
   lexicons: defaultdict[str, set[Entry | ClassEntry]]
@@ -38,7 +42,7 @@ class Lexicon:
   def detach_ending(self, form: str, part_of_speech: str, is_root: bool) -> tuple[str, str]:
     endings = self.endings[part_of_speech]
     for ending in endings:
-      if len(ending) < len(form) and form.endswith(ending) and form != '-' + ending:
+      if len(ending) < len(form) and form.endswith(ending):
         if not is_root or len(form) - len(ending) > 1:
           return form[:-len(ending)], ending
     return form, ''
@@ -64,28 +68,40 @@ class Lexicon:
           morpheme = Morpheme(row.affix, PREFIX_LEXICON_NAME, next_class, 'prefix')
           self.add_morph(morpheme)
       case 'suffix':
-        form: str = add_boundary(row.affix, row.affix_type)
-        self.add_morpheme(form, row.base_pos, False, row.deriv_pos)
+        suffix, ending = self.detach_ending_from_suffix(row.affix, row.base_pos, row.deriv_pos)
+        self.add_morph(suffix)
+        self.add_ending(ending)
 
-  def add_morpheme(self, citation_form: str, part_of_speech: str, is_root: bool,
-                   next_class: str) -> None:
-    morpheme, ending = self.detach_ending(citation_form, next_class, is_root)
-    if is_root:
-      form = '({0})'.format(morpheme)
-      main_lexicon = part_of_speech + 'Root'
+  def add_citation_form(self, citation_form: str, part_of_speech: str) -> None:
+    if ' ' not in citation_form:
+      root, ending = self.detach_ending_from_root(citation_form, part_of_speech)
+      self.add_morph(root)
+      self.add_ending(ending)
+
+  def add_ending(self, ending: Morpheme) -> None:
+    if ending.form != '':
+      self.add_morph(ending)
     else:
-      form = morpheme
-      main_lexicon = part_of_speech
-    if ' ' not in morpheme:
-      if ending == '':
-        inflectional_class_lexicon_name = next_class + 'zero'
-        ending_entry: Entry | ClassEntry = END_OF_WORD_ENTRY
-      else:
-        inflectional_class_lexicon_name = next_class + ending
-        ending_entry = Entry('-' + ending, END_OF_WORD_NEXT_CLASS)
-      self.lexicons[main_lexicon].add(Entry(form, inflectional_class_lexicon_name))
-      self.lexicons[inflectional_class_lexicon_name].add(ending_entry)
-      self.lexicons[inflectional_class_lexicon_name].add(ClassEntry(next_class))
+      self.enable_derivation(ending.positional_class, END_OF_WORD_NEXT_CLASS)
+
+  def detach_ending_from_root(self, citation_form: str, part_of_speech: str) -> tuple[Morpheme, Morpheme]:
+    root_form, ending_form = self.detach_ending(citation_form, part_of_speech, True)
+    paradigm_class = get_paradigm_class(part_of_speech, ending_form)
+    self.enable_derivation(paradigm_class, part_of_speech)
+    root = Morpheme(root_form, get_root_positional_class(part_of_speech), paradigm_class, 'root')
+    ending = Morpheme(ending_form, paradigm_class, END_OF_WORD_NEXT_CLASS, 'suffix')
+    return root, ending
+
+  def detach_ending_from_suffix(self, suffix_with_ending: str, base_pos: str, deriv_pos: str) -> tuple[Morpheme, Morpheme]:
+    suffix_form, ending_form = self.detach_ending(suffix_with_ending, deriv_pos, False)
+    paradigm_class = get_paradigm_class(deriv_pos, ending_form)
+    self.enable_derivation(paradigm_class, deriv_pos)
+    suffix = Morpheme(suffix_form, get_suffix_positional_class(base_pos), paradigm_class, 'suffix')
+    ending = Morpheme(ending_form, paradigm_class, END_OF_WORD_NEXT_CLASS, 'suffix')
+    return suffix, ending
+
+  def enable_derivation(self, positional_class: str, next_positional_class: str) -> None:
+    self.lexicons[positional_class].add(ClassEntry(next_positional_class))
 
   def store(self, file_name: str) -> None:
     with open(file_name, 'w', encoding='utf-8') as fout:

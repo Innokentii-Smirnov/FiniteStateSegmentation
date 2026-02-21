@@ -52,7 +52,7 @@ for row in df.itertuples(name='DerivationalPair'):
 underived = bases - derivations
 for base, base_pos in underived:
   if base_pos != UNKNOWN_POS_SYMBOL:
-    lexicon.add_morpheme(base, base_pos, True, base_pos)
+    lexicon.add_citation_form(base, base_pos)
 for row in df.itertuples(name='DerivationalPair'):
   if row.base_pos != UNKNOWN_POS_SYMBOL and row.deriv_pos != UNKNOWN_POS_SYMBOL:
     lexicon.add(row)
