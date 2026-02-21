@@ -6950,7 +6950,7 @@ LEXICON NRoot
 (kayak)	Nzero;
 (kelvin)	Nzero;
 (kil)	No;
-(l)	Na;
+(la)	Nzero;
 (lab)	Ne;
 (laberint)	No;
 (labi)	No;
@@ -8749,7 +8749,6 @@ LEXICON NRoot
 (sótan)	No;
 (sóviet)	Nzero;
 (súrcul)	No;
-(t)	Ne;
 (tab)	Na;
 (tabac)	No;
 (tabiqu)	Ne;
@@ -8811,6 +8810,7 @@ LEXICON NRoot
 (taxis)	Nzero;
 (taxónom)	No;
 (taz)	Na;
+(te)	Nzero;
 (teatr)	No;
 (tech)	No;
 (tecl)	Na;
@@ -9250,10 +9250,9 @@ LEXICON NRoot
 (xifoides)	Nzero;
 (xilografí)	Na;
 (xilófon)	No;
-(y)	Ne;
-(y)	No;
 (yan)	Na;
 (yat)	Ne;
+(ye)	Nzero;
 (yegu)	Na;
 (yerb)	Na;
 (yern)	No;
@@ -9261,6 +9260,7 @@ LEXICON NRoot
 (yesc)	Na;
 (yeyun)	No;
 (yihad)	Nzero;
+(yo)	Nzero;
 (yod)	No;
 (yog)	Na;
 (yogur)	Nzero;
@@ -10253,9 +10253,9 @@ LEXICON VRoot
 (curr)	Var;
 (curt)	Vir;
 (cut)	Vir;
-(d)	Var;
 (damnific)	Var;
 (danz)	Var;
+(dar)	Vzero;
 (debilit)	Var;
 (debut)	Var;
 (dec)	Vir;
@@ -11667,7 +11667,6 @@ LEXICON VRoot
 (rug)	Vir;
 (rumi)	Var;
 (rutil)	Var;
-(s)	Ver;
 (sabote)	Var;
 (sacraliz)	Var;
 (sacud)	Vir;
@@ -11701,6 +11700,7 @@ LEXICON VRoot
 (sentencia)	Vzero;
 (separ)	Var;
 (sepult)	Var;
+(ser)	Vzero;
 (serpente)	Var;
 (serr)	Var;
 (serv)	Vir;
@@ -11902,7 +11902,6 @@ LEXICON VRoot
 (urd)	Vir;
 (ustede)	Var;
 (usurp)	Var;
-(v)	Ver;
 (vac)	Var;
 (vacil)	Var;
 (vah)	Var;
@@ -11922,6 +11921,7 @@ LEXICON VRoot
 (vener)	Var;
 (veng)	Var;
 (ventil)	Var;
+(ver)	Vzero;
 (veran)	Var;
 (verdec)	Ver;
 (verific)	Var;

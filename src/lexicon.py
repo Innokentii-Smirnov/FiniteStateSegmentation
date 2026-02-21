@@ -34,11 +34,12 @@ class Lexicon:
       root_lexicon.add(ClassEntry(part_of_speech + 'Root'))
     self.endings = endings
 
-  def detach_ending(self, form: str, part_of_speech: str) -> tuple[str, str]:
+  def detach_ending(self, form: str, part_of_speech: str, is_root: bool) -> tuple[str, str]:
     endings = self.endings[part_of_speech]
     for ending in endings:
       if len(ending) < len(form) and form.endswith(ending) and form != '-' + ending:
-        return form[:-len(ending)], ending
+        if not is_root or len(form) - len(ending) > 1:
+          return form[:-len(ending)], ending
     return form, ''
 
   @property
@@ -64,7 +65,7 @@ class Lexicon:
 
   def add_morpheme(self, citation_form: str, part_of_speech: str, is_root: bool,
                    next_class: str) -> None:
-    morpheme, ending = self.detach_ending(citation_form, next_class)
+    morpheme, ending = self.detach_ending(citation_form, next_class, is_root)
     if is_root:
       form = '({0})'.format(morpheme)
       main_lexicon = part_of_speech + 'Root'
