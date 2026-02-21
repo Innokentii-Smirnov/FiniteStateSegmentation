@@ -11,7 +11,7 @@ SEP = '\t'
 COLUMN_NAMES = ['base', 'derivative', 'base_pos', 'deriv_pos', 'affix', 'affix_type']
 ENDING_FILE_NAME = 'Endings.json'
 LEXICON_DIRECTORY_TEMPLATE = '{0}/src'
-LEXICON_FILE_NAME = 'Affixes.lexc'
+LEXICON_FILE_NAME = 'Lexicon.lexc'
 UNKNOWN_POS_SYMBOL = 'U'
 language_codes = list[str]()
 if not path.exists(DATA_REPOSITORY):

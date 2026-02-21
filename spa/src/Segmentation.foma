@@ -1,4 +1,4 @@
-read lexc Affixes.lexc
+read lexc Lexicon.lexc
 define Lexicon;
 define Boundary "-" | "(" | ")";
 define RemoveBoundary Boundary -> 0 || _ ;
