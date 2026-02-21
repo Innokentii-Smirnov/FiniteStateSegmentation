@@ -8,7 +8,7 @@ PREFIX_LEXICON_NAME = 'Prefixes'
 PREFIX_CLASS_ENTRY = ClassEntry(PREFIX_LEXICON_NAME)
 END_OF_WORD_NEXT_CLASS = '#'
 END_OF_WORD_ENTRY = ClassEntry(END_OF_WORD_NEXT_CLASS)
-ROOT_FORM_TEMPLATE = '<?+>'
+ROOT_FORM_TEMPLATE = r'<%(\[%)|%(|%-]+%)>'
 LEXICON_HEADER_TEMPLATE = 'LEXICON {0}'
 MORPHEME_BOUNDARY = '-'
 
@@ -31,13 +31,17 @@ class Lexicon:
     root_lexicon = self.lexicons[ROOT_LEXICON_NAME]
     root_lexicon.add(PREFIX_CLASS_ENTRY)
     for part_of_speech in parts_of_speech:
+      root_lexicon.add(ClassEntry(part_of_speech + 'Root'))
       root_entry = Entry(ROOT_FORM_TEMPLATE, part_of_speech)
-      root_lexicon.add(root_entry)
+      self.lexicons[part_of_speech + 'Root'].add(root_entry)
       self.lexicons[part_of_speech].add(END_OF_WORD_ENTRY)
 
   @property
   def lexicon_order(self) -> list[str]:
-    return [ROOT_LEXICON_NAME, PREFIX_LEXICON_NAME] + sorted(self.parts_of_speech)
+    return ([ROOT_LEXICON_NAME]
+      + [part_of_speech + 'Root' for part_of_speech in self.parts_of_speech]
+      + [PREFIX_LEXICON_NAME]
+      + self.parts_of_speech)
 
   def add(self, row: DerivationalPair) -> None:
     form: str = add_boundary(row.affix, row.affix_type)
@@ -45,7 +49,7 @@ class Lexicon:
       case 'prefix':
         if row.base_pos == row.deriv_pos:
           lexicon_name = PREFIX_LEXICON_NAME
-          next_class: str = row.base_pos
+          next_class: str = row.base_pos + 'Root'
         else:
           return
       case 'suffix':
