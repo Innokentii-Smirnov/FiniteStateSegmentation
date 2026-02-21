@@ -3,6 +3,7 @@ from os import path
 import argparse
 import pandas as pd
 from lexicon import Lexicon
+from typing import Any
 DATA_REPOSITORY = 'MorphyNet'
 DATA_FILE_NAME_TEMPLATE = '{0}.derivational.v1.tsv'
 SEP = '\t'
@@ -36,6 +37,16 @@ print(df.head())
 parts_of_speech = set(df['base_pos']) | set(df['deriv_pos'])
 parts_of_speech.remove(UNKNOWN_POS_SYMBOL)
 lexicon = Lexicon(parts_of_speech)
+row: Any = None
+derivations = set[tuple[str, str]]()
+for row in df.itertuples(name='DerivationalPair'):
+  derivations.add((row.derivative, row.deriv_pos))
+bases = set[tuple[str, str]]()
+for row in df.itertuples(name='DerivationalPair'):
+  bases.add((row.base, row.base_pos))
+underived = bases - derivations
+for base, base_pos in underived:
+  lexicon.add_root(base, base_pos)
 for row in df.itertuples(name='DerivationalPair'):
   if row.base_pos != UNKNOWN_POS_SYMBOL and row.deriv_pos != UNKNOWN_POS_SYMBOL:
     lexicon.add(row)

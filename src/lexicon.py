@@ -8,7 +8,6 @@ PREFIX_LEXICON_NAME = 'Prefixes'
 PREFIX_CLASS_ENTRY = ClassEntry(PREFIX_LEXICON_NAME)
 END_OF_WORD_NEXT_CLASS = '#'
 END_OF_WORD_ENTRY = ClassEntry(END_OF_WORD_NEXT_CLASS)
-ROOT_FORM_TEMPLATE = r'<%(\[%)|%(|%-]+%)>'
 LEXICON_HEADER_TEMPLATE = 'LEXICON {0}'
 MORPHEME_BOUNDARY = '-'
 
@@ -32,8 +31,6 @@ class Lexicon:
     root_lexicon.add(PREFIX_CLASS_ENTRY)
     for part_of_speech in parts_of_speech:
       root_lexicon.add(ClassEntry(part_of_speech + 'Root'))
-      root_entry = Entry(ROOT_FORM_TEMPLATE, part_of_speech)
-      self.lexicons[part_of_speech + 'Root'].add(root_entry)
       self.lexicons[part_of_speech].add(END_OF_WORD_ENTRY)
 
   @property
@@ -59,6 +56,10 @@ class Lexicon:
         return
     entry = Entry(form, next_class)
     self.lexicons[lexicon_name].add(entry)
+
+  def add_root(self, root: str, part_of_speech: str) -> None:
+    if ' ' not in root:
+      self.lexicons[part_of_speech + 'Root'].add(Entry( '({0})'.format(root), part_of_speech))
 
   def store(self, file_name: str) -> None:
     with open(file_name, 'w', encoding='utf-8') as fout:
