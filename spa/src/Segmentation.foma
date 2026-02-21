@@ -1,0 +1,5 @@
+read lexc Affixes.lexc
+define Lexicon;
+define Boundary "-";
+define RemoveBoundary Boundary -> 0 || _ ;
+define Segmentation Lexicon .o. RemoveBoundary;
