@@ -1,3 +1,6 @@
 [submodule "MorphyNet"]
 	path = MorphyNet
 	url = https://github.com/kbatsuren/MorphyNet.git
+[submodule "CompileFST"]
+	path = CompileFST
+	url = https://github.com/Innokentii-Smirnov/CompileFST.git
